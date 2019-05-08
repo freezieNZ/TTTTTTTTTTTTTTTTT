@@ -1,7 +1,7 @@
 const Discord = require ('discord.js');
 const client = new Discord.Client ();
 var prefix = "?";
-client.login('NTI3MjE0MDY5Njc4MzQyMTY0.XNB3WQ.c4iQo7X888HWjpKZJ37NLgCopXg');
+client.login(process.env.TOKEN);
 
 client.on("message", message => {
     if(message.content === '?auteur'){
